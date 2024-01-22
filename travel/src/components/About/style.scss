@@ -1,0 +1,35 @@
+@import '../../assets/styles/settings';
+
+
+.bgImage {
+    background: url(../../assets/images/About-Rectangle-4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 749px;
+    width: 1071px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.about-text {
+    font-size: 14px;
+    position: absolute;
+    width: 542px;
+    height: 476px;
+    top: 175px;
+    left: 738px;
+    border-radius: 10px;
+    background-color: $gray-2;
+    border-radius: 10px;
+    padding: 70px;
+
+    h2 {
+        margin-left: 20px;
+        color: $lightBlue;
+    }
+    p {
+        margin: 20px;
+    }
+}
