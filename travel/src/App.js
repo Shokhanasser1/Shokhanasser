@@ -1,23 +1,20 @@
 import './index.scss'
-import About from './components/About'
+// import About from './components/About'
+// import Navigation from './components/Navigation'
+import AllComponents from './components/AllComponents';
+
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and see the magic!.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <About />
-      </header>
+      
+      <BrowserRouter>
+
+<AllComponents />
+        {/* <Navigation />
+        <About /> */}
+      </BrowserRouter>
     </div>
   );
 }

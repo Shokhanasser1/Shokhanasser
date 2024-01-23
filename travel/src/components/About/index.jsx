@@ -1,8 +1,8 @@
 import './style.scss'
 function About() {
     return (
-        <div id='about-wrapper'>
-            <div className='bgImage'>
+        <div className='about-wrapper'>
+            <div className='about-bgImage'>
                 <div className="about-text">
                     <h2>О нас</h2>
                     <p>PeroTravel - Первый онлайн-сервис по бронированию экскурсий без очередей и операторов. <br />

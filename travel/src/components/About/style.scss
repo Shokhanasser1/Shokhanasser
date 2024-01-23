@@ -1,7 +1,14 @@
 @import '../../assets/styles/settings';
 
 
-.bgImage {
+.about-wrapper {
+    width: 1280px;
+    height: 749px;
+    position: relative;
+    top: 1901px;
+}
+
+.about-bgImage {
     background: url(../../assets/images/About-Rectangle-4.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -16,9 +23,9 @@
 .about-text {
     font-size: 14px;
     position: absolute;
+    top: 144px;
     width: 542px;
     height: 476px;
-    top: 175px;
     left: 738px;
     border-radius: 10px;
     background-color: $gray-2;
