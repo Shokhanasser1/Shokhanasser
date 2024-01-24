@@ -1,6 +1,9 @@
 import './style.scss'
+import BlogProductCarousel from '../common/Carousel';
 function About() {
     return (
+        <>
+            <BlogProductCarousel />
         <div className='about-wrapper'>
             <div className='about-bgImage'>
                 <div className="about-text">
@@ -14,6 +17,7 @@ function About() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
