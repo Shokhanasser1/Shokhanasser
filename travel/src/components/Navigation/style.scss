@@ -13,6 +13,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
+    padding: 50px;
 
     .menu {
         display: flex;

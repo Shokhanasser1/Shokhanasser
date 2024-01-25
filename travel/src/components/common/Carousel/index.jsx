@@ -24,48 +24,53 @@ export default function BlogProductCarousel() {
         }
     };
     return (
-        <div className="BlogProductCarousel">
-            <h2>Популярные экскурсии</h2>
-            <Carousel responsive={responsive}>
-                <div className="card-1">
-                    <span className="name-1">Автобусный тур</span>
-                    <h4 className="name--2">Обзорная по Сочи (из Адлера)</h4>
-                    <small className="time-1">6 часов</small> <small className="price-1">618$</small>
-                    <p className="info-1">Приглашаем вас на экскурсию
-                        "Обзорная по Большому Сочи":
-                        Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров) на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36 годах по проекту архитектора С. И. Воробьева...</p>
-                    <button className="btn">More</button>
+        <>
+            <div className="BlogProductCarousel">
+                <h2>Популярные экскурсии</h2>
+                <Carousel
+                    infiniteLoop={true}
+                    responsive={responsive}
+                >
+                    <div className="card-1">
+                        <span className="name-1">Автобусный тур</span>
+                        <h4 className="name--2">Обзорная по Сочи (из Адлера)</h4>
+                        <small className="time-1">6 часов</small> <small className="price-1">618рублей</small>
+                        <p className="info-1">Приглашаем вас на экскурсию
+                            "Обзорная по Большому Сочи":
+                            Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров) на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36 годах по проекту архитектора С. И. Воробьева...</p>
+                        <button className="btn">Подробнее</button>
 
-                </div>
-                <div className="card-2">
-                    <span className="name-2">Автобусный тур</span>
-                    <h4 className="name--3">Обзорная по Сочи (из Адлера)</h4>
-                    <small className="time-2">6 часов</small> <small className="price-2">618$</small>
-                    <p className="info-2">Приглашаем вас на экскурсию
-                        "Обзорная по Большому Сочи":
-                        Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров) на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36 годах по проекту архитектора С. И. Воробьева...</p>
-                        <button className="btn">More</button>
-                </div>
-                <div className="card-3">
-                    <span className="name-3">Автобусный тур</span>
-                    <h4 className="name--4">Обзорная по Сочи (из Адлера)</h4>
-                    <small className="time-3">6 часов</small> <small className="price-3">618$</small>
-                    <p className="info-3">Приглашаем вас на экскурсию
-                        "Обзорная по Большому Сочи":
-                        Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров) на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36 годах по проекту архитектора С. И. Воробьева...</p>
-                        <button className="btn">More</button>
-                </div>
-                <div className="card-4">
-                    <span className="name-4">Автобусный тур</span>
-                    <h4 className="name--5">Обзорная по Сочи (из Адлера)</h4>
-                    <small className="time-4">6 часов</small> <small className="price-4">618$</small>
-                    <p className="info-4">Приглашаем вас на экскурсию
-                        "Обзорная по Большому Сочи":
-                        Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров) на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36 годах по проекту архитектора С. И. Воробьева...</p>
-                        <button className="btn">More</button>
-                
-                </div>
-            </Carousel>
-        </div>
+                    </div>
+                    <div className="card-2">
+                        <span className="name-2">Конный тур</span>
+                        <h4 className="name--3">Конные прогулки</h4>
+                        <small className="time-2">1,5 часов</small> <small className="price-2">1809 рублей</small>
+                        <p className="info-2">Конные прогулки проходят в Лазурной долине. С долины открывается красивый вид на море, горы и лес. На всем пути следования экскурсии вас будут сопровождать опытные инструктора. Катание на лошадях или иппотерапия очень полезна для детей и взрослых...</p>
+                        <button className="btn">Подробнее</button>
+                    </div>
+                    <div className="card-3">
+                        <span className="name-3">Квадротур</span>
+                        <h4 className="name--4">Пасть дракона</h4>
+                        <small className="time-3">2,5 часов</small> <small className="price-3">3515 рублей</small>
+                        <p className="info-3">Маршрут на Квадроциклах проходит по горной реке Мзымта вдоль белых скал и самшитовый лес к водопаду Глубокий Яр или "Пасть Дракона" (экскурсионное название).
+Высота водопада 41,5 метр - это один из самых высоких водопадов Большого Сочи...</p>
+                        <button className="btn">Подробнее</button>
+                    </div>
+                    <div className="card-4">
+                        <span className="name-4">Автобусный тур</span>
+                        <h4 className="name--5">Женский монастырь </h4>
+                        <small className="time-4">4 часов</small> <small className="price-4">618 рублей</small>
+                        <p className="info-4">Троице - Георгиевский женский монастырь расположен в селе Лесное в живописном месте, в котором гармонично сочетаются красота природы и красота архитектуры сотворенная руками человека.
+Это удивительное место расположено совсем недалеко от Чёрного моря - всего в 20 километрах 
+
+</p>
+                        <button className="btn">Подробнее</button>
+
+                    </div>
+                </Carousel>
+            </div>
+
+        </>
     )
 }
+

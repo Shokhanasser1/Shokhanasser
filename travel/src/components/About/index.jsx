@@ -1,10 +1,22 @@
 import './style.scss'
-import BlogProductCarousel from '../common/Carousel';
+// import CompanyBlog from './CompanyBlog'
+import CarouselComponent from '../common/Carousel';
+
+import Blog1 from '../../assets/images/Rectangle-13-3.png'
+import Blog2 from '../../assets/images/Rectangle-13-2.png'
+import Blog3 from '../../assets/images/Rectangle-13-1.png'
+import Blog4 from '../../assets/images/Rectangle-13-4.png'
 function About() {
+    const images = [Blog1,Blog2,Blog3,Blog4]
     return (
         <>
-            <BlogProductCarousel />
+            <div className="carousel">
+            <CarouselComponent images={images}>
+            </CarouselComponent>
+            </div>
         <div className='about-wrapper'>
+            <div className="company-blog">
+            </div>
             <div className='about-bgImage'>
                 <div className="about-text">
                     <h2>О нас</h2>
@@ -17,6 +29,15 @@ function About() {
                 </div>
             </div>
         </div>
+{/* 
+        <div className="inner-carousel">
+                    <h1>Хедж-фонд</h1>
+                    <br />
+                    <p>Классический выбор профессиональных инвесторов с заданными умеренными параметрами риска. Основан на инвестировании в бумаги индекса S&P 500 с диверсификацией по 11 секторам экономики.</p>
+                    <br />
+                    <button className="warning-btn">Подробнее</button>
+                </div>
+ */}
         </>
     )
 }
