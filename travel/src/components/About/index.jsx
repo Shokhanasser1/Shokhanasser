@@ -1,7 +1,8 @@
 import './style.scss'
 // import CompanyBlog from './CompanyBlog'
-import CarouselComponent from '../common/Carousel';
+import CarouselComponent from '../common/Carousel'
 
+import Values from './Values'
 import Blog1 from '../../assets/images/Rectangle-13-3.png'
 import Blog2 from '../../assets/images/Rectangle-13-2.png'
 import Blog3 from '../../assets/images/Rectangle-13-1.png'
@@ -13,6 +14,9 @@ function About() {
             <div className="carousel">
             <CarouselComponent images={images}>
             </CarouselComponent>
+            </div>
+            <div className="values-wrapper">
+                <Values />
             </div>
         <div className='about-wrapper'>
             <div className="company-blog">
