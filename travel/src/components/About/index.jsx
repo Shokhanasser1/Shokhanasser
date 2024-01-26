@@ -1,7 +1,7 @@
 import './style.scss'
 // import CompanyBlog from './CompanyBlog'
 import CarouselComponent from '../common/Carousel'
-import Gallery from './Gallery'
+import GalleryDiv from './Gallery-div.jsx'
 import Values from './Values'
 import Blog1 from '../../assets/images/Rectangle-13-3.png'
 import Blog2 from '../../assets/images/Rectangle-13-2.png'
@@ -19,9 +19,9 @@ function About() {
             <div className="values-wrapper">
                 <Values />
             </div>
-            <div className="gallery">
-                <Gallery />
-            </div>
+            <div className="gallery-divs">
+            <GalleryDiv />
+        </div>
         <div className='about-wrapper'>
             <div className="company-blog">
             </div>
@@ -40,6 +40,8 @@ function About() {
         <div className="Contacts-form">
             <ContactsForm />
         </div>
+        
+
 {/* 
         <div className="inner-carousel">
                     <h1>Хедж-фонд</h1>

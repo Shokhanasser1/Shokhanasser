@@ -36,6 +36,7 @@
         margin-left: 20px;
         color: $lightBlue;
     }
+
     p {
         margin: 20px;
     }
@@ -55,6 +56,7 @@
         margin-bottom: 100px;
         margin-left: 200px;
     }
+
     .value-text {
         display: flex;
         justify-content: center;
@@ -62,7 +64,7 @@
         padding: 100px;
         flex-direction: column;
 
-        button{
+        button {
             @extend %info-btn;
             position: relative;
 
@@ -72,8 +74,8 @@
                 right: 95px;
             }
         }
-       
-        p{
+
+        p {
             width: 600px;
             text-align: center;
         }
@@ -115,6 +117,7 @@
 
     }
 }
-.gallery-wrapper {
+.gallery-divs {
     position: relative;
+    top: 600px;
 }
