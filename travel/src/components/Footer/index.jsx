@@ -1,25 +1,26 @@
 import './style.scss'
 import React, { Link } from 'react-router-dom'
-import Heading2 from '../Heading2'
-import Icon1 from '../../assets/icons/wh 1f.png'
-import Icon2 from '../../assets/icons/tg 2f.png'
-import Icon3 from '../../assets/icons/mail 1f.png'
+import IconWH from '../../assets/icons/wh 1f.png'
+import IconTG from '../../assets/icons/tg 2f.png'
+import IconEl from '../../assets/icons/mail 1f.png'
 import FooterFace from '../../assets/icons/facebook 1f.png'
 import FooterInst from '../../assets/icons/inst 1f.png'
 import FooterVk from '../../assets/icons/vk 1f.png'
+import ColorLogo from "../../assets/icons/logo_color 1f.png"
+
 
 function Footer() {
     return (
         <div className="footer-wrapper">
-            <div className="footer-top">
-                <div className="footer-heading">
+            <div className="footer-content">
+                <div className="footer-left">
                     <Link path={'/about'} >
-                        <Heading2></Heading2>
+                        <img src={ColorLogo} alt="" />
 
                     </Link>
                 </div>
 
-                <div className="footer-links">
+                <div className="footer-middle">
                     <div className="left">
                         <Link to='/about'>
                             Главная
@@ -32,60 +33,53 @@ function Footer() {
                         <Link to={'/'}>
                             Личный кабинет
                         </Link>
-
                     </div>
-
-
-                    <div className="right">
+                    <div className="footer-contacts">
                         <Link>
+                                <img src={IconWH} alt="" />
                             <div>
-                                <img src={Icon1} alt="" />
                                 <span>+7 964 944 18 74</span>
                             </div>
                         </Link>
 
                         <Link>
+                                <img src={IconTG} alt="" />
                             <div>
-                                <img src={Icon2} alt="" />
                                 <span>+7 964 944 18 74</span>
                             </div>
                         </Link>
 
                         <Link>
+                                <img src={IconEl} alt="" />
                             <div>
-                                <img src={Icon3} alt="" />
-                                <span>Телеграм-бот PeroTravel</span>
+                                <span>telegram-bot PeroTravel</span>
                             </div>
                         </Link>
 
 
 
                     </div>
+                <div className="footer-contacts-2">
+                    <Link>
+                        <div>
+                            <img className='email-img' src={IconEl} alt="" />
+                            <span>office@perotravel.ru</span>
+                        </div>
+                    </Link>
 
-                    <div className="twodiv">
-                        <Link>
-                            <div>
-                                <img src={Icon3} alt="" />
-                                <span>office@perotravel.ru</span>
-                            </div>
-                        </Link>
-
-                        <Link>
-                            <div>
-                                <img src={FooterVk} alt="" />
-                                <img src={FooterInst} alt="" />
-                                <img src={FooterFace} alt="" />
-                            </div>
-                        </Link>
-
-                    </div>
-
+                    <Link>
+                        <div className='social-media'>
+                            <img className='img-1' src={FooterVk} alt="" />
+                            <img className='img-2' src={FooterInst} alt="" />
+                            <img className='img-3' src={FooterFace} alt="" />
+                        </div>
+                    </Link>
+                </div>
                 </div>
 
 
 
             </div>
-
         </div>
     );
 }
