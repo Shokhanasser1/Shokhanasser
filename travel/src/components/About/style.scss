@@ -1,123 +1,134 @@
 @import '../../assets/styles/settings';
 
+.container {
+    width: 1600px;
+    margin: 0 auto;
 
-.about-wrapper {
-    width: 1280px;
-    height: 749px;
-    position: relative;
-    top: 900px;
-}
+    .carousel {
+        width: 150px;
 
-.about-bgImage {
-    background: url(../../assets/images/About-Rectangle-4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 749px;
-    width: 1071px;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.about-text {
-    font-size: 14px;
-    position: absolute;
-    top: 144px;
-    width: 542px;
-    height: 476px;
-    left: 738px;
-    border-radius: 10px;
-    background-color: $gray-2;
-    border-radius: 10px;
-    padding: 70px;
-
-    h2 {
-        margin-left: 20px;
-        color: $lightBlue;
+    }
+    .about-wrapper {
+        width: 1400px;
+        height: 750px;
+        position: relative;
+        top: 500px;
     }
 
-    p {
-        margin: 20px;
-    }
-}
-
-.carousel {
-    position: relative;
-    top: 500px;
-}
-
-.values-wrapper {
-    position: relative;
-    top: 200px;
-
-    h2 {
-        color: $lightBlue;
-        margin-bottom: 100px;
-        margin-left: 200px;
+    .about-bgImage {
+        background: url(../../assets/images/About-Rectangle-4.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 749px;
+        width: 1071px;
+        border-radius: 0px 10px 10px 0px;
     }
 
-    .value-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 100px;
-        flex-direction: column;
-
-        button {
-            @extend %info-btn;
-            position: relative;
-
-            &::after {
-                content: ">";
-                position: absolute;
-                right: 95px;
-            }
-        }
-
-        p {
-            width: 600px;
-            text-align: center;
-        }
-    }
-
-    .values-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        margin-top: 100px;
-        padding-left: 200px;
-    }
-
-    .value-item {
-        width: 600px;
-        display: flex;
-
-
-
-        img {
-            margin-top: 40px;
-            margin-right: 10px;
-        }
-
-        div {
-            padding-top: 45px;
+    .about-text {
+        font-size: 14px;
+        position: absolute;
+        top: 144px;
+        width: 542px;
+        height: 476px;
+        left: 738px;
+        border-radius: 10px;
+        background-color: $gray-2;
+        border-radius: 10px;
+        padding: 70px;
 
             h2 {
                 color: $lightBlue;
                 margin-bottom: 100px;
                 margin-left: 30px;
+            }        
+
+        p {
+            margin: 20px;
+        }
+    }
+
+    .carousel {
+        position: relative;
+        top: 400px;
+    }
+
+    .values-wrapper {
+        width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        top: 400px;
+
+        h2 {
+            color: $lightBlue;
+            margin-bottom: 60px;
+            margin-left: 210px;
+        }
+
+        .value-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 60px;
+
+            button {
+                @extend %info-btn;
+                position: relative;
             }
 
             p {
-                line-height: 20px;
+                width: 600px;
+                text-align: center;
+            }
+        }
+
+        .values-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding-left: 80px;
+        }
+
+        .value-item {
+            width: 590px;
+            display: flex;
+
+
+
+            img {
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+
+            div {
+                padding-top: 30px;
+
+                h2 {
+                    color: $lightBlue;
+                    margin-bottom: 100px;
+                    margin-left: 30px;
+                }
+
+                p {
+                    line-height: 20px;
+                }
+
             }
 
         }
-
     }
-}
-.gallery-divs {
-    position: relative;
-    top: 600px;
+
+    .gallery-divs {
+        width: 1400px;
+        position: relative;
+        top: 1000px;
+    }
+    .contacts-form {
+        width: 1400px;
+        position: relative;
+        top: 1300px;
+    }
 }

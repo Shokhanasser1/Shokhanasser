@@ -11,17 +11,11 @@ import ContactsForm from '../ContactsForm'
 function About() {
     const images = [Blog1,Blog2,Blog3,Blog4]
     return (
-        <>
+        <div className='container'>
             <div className="carousel">
             <CarouselComponent images={images}>
             </CarouselComponent>
             </div>
-            <div className="values-wrapper">
-                <Values />
-            </div>
-            <div className="gallery-divs">
-            <GalleryDiv />
-        </div>
         <div className='about-wrapper'>
             <div className="company-blog">
             </div>
@@ -37,7 +31,13 @@ function About() {
                 </div>
             </div>
         </div>
-        <div className="Contacts-form">
+            <div className="values-wrapper">
+                <Values />
+            </div>
+            <div className="gallery-divs">
+            <GalleryDiv />
+        </div>
+        <div className="contacts-form">
             <ContactsForm />
         </div>
         
@@ -51,7 +51,7 @@ function About() {
                     <button className="warning-btn">Подробнее</button>
                 </div>
  */}
-        </>
+        </div>
     )
 }
 
