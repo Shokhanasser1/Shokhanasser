@@ -6,8 +6,10 @@
 
 
     .carousel {
-        width: 1300px;
+        width: 100%;
     }
+
+    .about-container {
 
         .about-wrapper {
             width: 100%;
@@ -25,6 +27,13 @@
                 height: 749px;
                 width: 1071px;
                 border-radius: 0px 10px 10px 0px;
+
+                @media screen and (max-width: 1080px) {
+                    width: 700px;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 450px;
+                }
             }
 
             .about-text {
@@ -38,10 +47,27 @@
                 background-color: $gray-2;
                 border-radius: 10px;
                 padding: 70px;
+                @media screen and (max-width: 1080px) {
+                    left: 450px;
+                    padding: 50px;
+                    font-size: 16px;
+                    height: auto;
+                }
+                @media screen and (min-width: 600px) and (max-width: 768px) {
+                    left: 30px;
+                    padding: 30px;
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 800px) {
+                    left: 220px;
+                    padding: 30px;
+                    font-size: 16px;
+                    height: auto;
+                }
 
                 h2 {
                     color: $lightBlue;
-                    margin-bottom: 100px;
+                    margin-bottom: 40px;
                     margin-left: 30px;
                 }
 
@@ -49,7 +75,13 @@
                     margin: 20px;
                 }
             }
+
         }
+        @media scren and (max-width: 1080px) {
+        width: 100%;    
+        }
+        
+    }
 
     .carousel {
         position: relative;
@@ -137,6 +169,7 @@
         top: 1300px;
         margin: 0 auto;
     }
+
     .footer {
         width: 100%;
         position: relative;
