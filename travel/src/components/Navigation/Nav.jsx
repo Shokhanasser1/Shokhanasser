@@ -4,7 +4,6 @@ import instagram from '../../assets/icons/inst 1.png'
 import facebook from '../../assets/icons/facebook 1.png'
 import videoImg from '../../assets/images/video.png'
 import logo from '../../assets/logo white.png'
-
 function Nav(props) {
     const navigate = useNavigate()
 
@@ -12,6 +11,7 @@ function Nav(props) {
         navigate('/about')
 
     }
+
     return (
         <div className="nav-container">
 
@@ -26,9 +26,11 @@ function Nav(props) {
                         <Link to='/' >
                             Главная
                         </Link>
+
                         <Link onClick={goToTeamsHash} to={'/blog'}>
                             Ekskursiya
                         </Link>
+
                         <Link to={'/profile'} >
                             Личный кабинет
                         </Link>
