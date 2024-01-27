@@ -1,8 +1,10 @@
 @import '../../../assets/styles/_settings.scss';
 
 .BlogProductCarousel {
-    width: 1400px;
+    width: 100%;
+    margin: 0 auto;
     height: 720px;
+
     
     h2 {
         color: $lightBlue;
@@ -12,7 +14,6 @@
 
     .card-1 {
         background-color: gray;
-        margin: 10px;
         border-radius: 10px;
         width: 400px;
         height: 500px;
@@ -61,7 +62,6 @@
     }
     .card-2 {
         background-color: gray;
-        margin: 10px;
         border-radius: 10px;
         width: 400px;
         height: 500px;
@@ -111,7 +111,6 @@
 
     .card-3 {
         background-color: gray;
-        margin: 10px;
         border-radius: 10px;
         width: 400px;
         height: 500px;
@@ -160,7 +159,6 @@
     }
     .card-4 {
         background-color: gray;
-        margin: 10px;
         border-radius: 10px;
         width: 400px;
         height: 500px;

@@ -14,8 +14,8 @@
             margin: 5px;
             background-color: gray;
 
-            width: 500px;
-            height: 339px;
+            width: 550px;
+            height: 409px;
         }
 
         .bottom {
@@ -27,7 +27,7 @@
         background-color: gray;
 
 
-                width: 215px;
+                width: 265px;
                 height: 319px;
             }
 
@@ -36,8 +36,8 @@
 
                 margin: 5px;
 
-                width: 265px;
-                height: 155px;
+                width: 270px;
+                height: 157px;
             }
 
             .bottom-img-4 {
@@ -45,8 +45,8 @@
 
                 margin: 5px;
 
-                width: 265px;
-                height: 155px;
+                width: 270px;
+                height: 158px;
             }
         }
     }
@@ -56,8 +56,8 @@
 
         margin: 5px;
 
-        width: 360px;
-        height: 678px;
+        width: 380px;
+        height: 735px;
     }
 
     .right {
@@ -70,7 +70,7 @@
 
                 margin: 5px;
 
-                width: 265px;
+                width: 290px;
                 height: 320px;
             }
 
@@ -78,7 +78,7 @@
         background-color: gray;
 
                 margin: 5px;
-                width: 220px;
+                width: 250px;
                 height: 320px;
             }
         }
@@ -87,8 +87,8 @@
         background-color: gray;
 
             margin: 5px;
-            width: 500px;
-            height: 340px;
+            width: 550px;
+            height: 405px;
         }
 
     }
@@ -97,11 +97,16 @@
         height: 100%;
     }
     @media (max-width: 1400px) {
-        .left {
-            display: none;
-        }
         .gallery-div {
-            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @media (min-width: px) {
+        .gallery-div {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
         }
     }
 

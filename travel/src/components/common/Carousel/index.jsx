@@ -11,20 +11,19 @@ export default function BlogProductCarousel() {
             items: 5
         },
         desktop: {
-            breakpoint: { max: 3000, min: 1024 },
+            breakpoint: { max: 3000, min: 768 },
             items: 3
         },
         tablet: {
-            breakpoint: { max: 1024, min: 464 },
+            breakpoint: { max: 768, min: 474 },
             items: 2
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 474, min: 0 },
             items: 1
         }
     };
     return (
-        <>
             <div className="BlogProductCarousel">
                 <h2>Популярные экскурсии</h2>
                 <Carousel
@@ -70,7 +69,6 @@ export default function BlogProductCarousel() {
                 </Carousel>
             </div>
 
-        </>
     )
 }
 
