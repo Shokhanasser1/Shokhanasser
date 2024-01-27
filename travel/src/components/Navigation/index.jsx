@@ -7,9 +7,7 @@ function Navigation() {
     return (
 
         <div>
-            <header>
                 <Nav />
-            </header>
             <div id='outlet'>
                 <Outlet />
             </div>

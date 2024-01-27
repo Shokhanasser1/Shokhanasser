@@ -1,7 +1,7 @@
 @import "../../assets/styles/settings";
 
 .nav-container {
-    width: 1520px;
+    max-width: 1920px;
     margin: 0 auto;
     .nav-wrapper {
         background: url('../../assets/images/Rectangle-1.png');
@@ -25,7 +25,7 @@
 
 
             .nav-links {
-                margin-left: 300px;
+                margin-left: 32%;
 
                 a,
                 button {
@@ -43,7 +43,7 @@
 
             position: absolute;
             top: 200px;
-            left: 160px;
+            left: 11%;
 
 
             h2 {
@@ -51,8 +51,8 @@
                 font-size: 72px;
                 font-weight: 700;
                 font-family: 'Montserrat sans-serif';
-                width: 592px;
-                height: 88px;
+                width: 35%;
+                height: 16%;
                 color: snow;
             }
 
@@ -76,6 +76,20 @@
                 font-size: 64px;
                 height: 64px;
                 display: grid;
+                @media screen and (max-width: 768px) {
+                    top: 18%;
+                    left: 53%;
+                    font-size: 40px;
+                }
+            }
+            @media screen and (max-width: 768px){
+                h1 {
+                    font-size: 76px;
+                    margin: 0;
+                }
+                h2 {
+                    font-size: 60px;
+                }
             }
         }
 
@@ -90,16 +104,34 @@
             margin: 0;
             padding: 0;
             position: relative;
-            width: 580px;
-            height: 227px;
+            height: 220px;
             top: 350px;
-            left: 145px;
+            left: 61px;
             border-radius: 10px;
+            img {
+                max-width: 100%;
+            }
+
+            @media screen and (min-width: 1910px) {
+                position: relative;
+                top: 370px;
+                left: 344px;
+            }
+            @media screen and (max-width: 1090px) {
+                position: relative;
+                top: 370px;
+                left: 50px;
+            }
+            @media screen and (max-width: 800px) {
+                width: 400px;
+                top: 390px;
+                left: 50px;
+            }
         }
 
         .icons {
             width: 32px;
-            height: 32px;
+            height: 32px;   
 
             .icon-1 {
                 position: absolute;
@@ -130,7 +162,27 @@
                     transform: scale(0.7);
                 }
             }
+            @media screen and (max-width: 768px) {
+                .icon-1 {
+                    top: 520px;
+                }
+                .icon-2 {
+                    top: 560px;
+                }
+                .icon-3 {
+                    top: 600px;
+                }
+            }
         }
 
+    }
+    @media screen and (max-width: 1920px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 850px) {
+        width: 100%;
     }
 }

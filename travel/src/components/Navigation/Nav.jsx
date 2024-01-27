@@ -56,7 +56,7 @@ function Nav(props) {
                     </Link>
                 </div>
                 <div className="video-img">
-                    <img src={videoImg} alt="" />
+                    <img className='video-image' src={videoImg} alt="" />
                 </div>
             </div>
         </div>
