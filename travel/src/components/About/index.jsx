@@ -1,6 +1,7 @@
 import './style.scss'
 // import CompanyBlog from './CompanyBlog'
 import CarouselComponent from '../common/Carousel'
+import CarouselComponent2 from '../common/Carousel2'
 import GalleryDiv from './Gallery-div.jsx'
 import Values from './Values'
 import Blog1 from '../../assets/images/Rectangle-13-3.png'
@@ -44,6 +45,9 @@ function About() {
             </div>
             <div className="contacts-form">
                 <ContactsForm />
+            </div>
+            <div className="carousel-2">
+                <CarouselComponent2 />
             </div>
             <div className="footer">
             {/* <Footer /> */}
