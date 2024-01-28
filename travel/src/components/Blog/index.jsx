@@ -14,20 +14,20 @@ function Blog() {
                <div className="navbar-item">
                     <Item />
                </div>
-                    <div className="small-text">
-                         <span className="span">
-                              АВТОБУСНЫЙ ТУР
-                         </span>
-                         <span className="span">
-                              ДЖИППИНГ
-                         </span>
-                         <span className="span">
-                              ЯХТИНГ
-                         </span>
-                         <span className="span">
-                              КАНЬОНИНГ
-                         </span>
-                    </div>
+               <div className="small-text">
+                    <span className="span">
+                         АВТОБУСНЫЙ ТУР
+                    </span>
+                    <span className="span">
+                         ДЖИППИНГ
+                    </span>
+                    <span className="span">
+                         ЯХТИНГ
+                    </span>
+                    <span className="span">
+                         КАНЬОНИНГ
+                    </span>
+               </div>
                <div className="blog-wrapper">
                     <div className="input-btn">
                          <div className="input-1">
@@ -49,8 +49,74 @@ function Blog() {
                <div className="our-blogs">
 
                     <div className="second-container">
-                         <div className="div">
-                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, unde.</p>
+                         <div className="main-container">
+                              <div className="first-con">
+                                   <h2>Фильтры</h2>
+                                   <div className="price">
+                                        <b>Стоимость</b>
+                                        <br /><br /><div className="input">
+                                             <input type="text" value={"1600"} />
+                                             <input type="text" value={'4000'} />
+                                        </div>
+                                        <div className="range">
+                                             <br /><br /><input type="range" />
+                                        </div>
+                                   </div>
+                                   <hr />
+                                   <div className="people">
+                                        <h3>Количество человек</h3>
+
+                                        <div>
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                             <input type="text" value={"1 чел."} />
+                                        </div>
+                                   </div>
+                                   <hr />
+                                   <div className="radio-input">
+                                        <b>Место</b>
+                                        <div>
+                                             <input type="radio" name="city" checked />
+                                             <label htmlFor="">Абхазия</label>
+                                        </div>
+                                        <div>
+                                             <input type="radio" />
+                                             <label htmlFor="">Америка</label>
+                                        </div>
+                                        <div>
+                                             <input type="radio" />
+                                             <label htmlFor="">Сочи</label>
+                                        </div>
+                                        <div>
+                                             <input type="radio" />
+                                             <label htmlFor="">Адлер</label>
+                                        </div>
+                                        <div>
+                                             <input type="radio" />
+                                             <label htmlFor="">Адлер</label>
+                                        </div>
+                                   </div>
+                                   <br />
+                                   <br />
+                                   <br />
+                                   <br />
+                                   <hr />
+                                   <div className="b"><b>Длительность</b></div>
+                                   <br />
+                                   <br />
+                                   <br />
+                                   <hr />
+                                   <div className="b2"><b>Дата</b></div>
+
+                              </div>
                          </div>
                     </div>
 

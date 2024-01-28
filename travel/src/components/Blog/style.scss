@@ -299,3 +299,94 @@
    position: relative;
    bottom: 0;
 }
+
+
+.main-container {
+   display: flex;
+   position: relative;
+
+   .first-con {
+      width: 25%;
+      height: 1000px;
+      padding-right: 20%;
+      position: relative;
+      border-radius: 10px;
+
+      .b,
+      .b2{
+         position: relative;
+         left: 50px;
+         top: 20px;
+         font-size: large;
+      }
+
+
+      h2 {
+         padding: 20px 30px;
+      }
+
+      b {
+         padding: 10px;
+      }
+
+      hr {
+         width: 380px;
+      }
+
+
+      .price {
+         padding: 30px;
+
+         .range {
+            padding-left: 20px;
+           
+         }
+
+         .input {
+            display: flex;
+
+            input {
+               border-radius: 40px;
+               padding: 10px;
+               width: 150px;
+            }
+         }
+      }
+
+      .people {
+            h3{padding-left: 60px; padding-top: 20px;}
+         div {
+            display: inline-block;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 60px;
+
+
+            input {
+               text-align: center;
+               width: 83px;
+               height: 30px;
+               border-radius: 50px;
+               border: 1px solid gray;
+            }
+         }
+      }
+
+      .radio-input{
+         position: relative;
+         left: 50px;
+         top: 50px;
+
+         div{
+            display: flex;
+            padding: 3px;
+            font-size: large;
+            color: rgb(91, 91, 91);
+         }
+      }
+
+
+   }
+
+}

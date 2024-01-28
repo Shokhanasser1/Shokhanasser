@@ -10,28 +10,75 @@ import gallery6 from '../assets/images/6.png'
 import gallery7 from '../assets/images/7.png'
 import gallery8 from '../assets/images/8.png'
 export default function GalleryDiv() {
-  return (
-    <div className="gallery-div">
-        <div className="left">
-            <div className="top-img-1"><img src={gallery1} alt="" /></div>
-            <div className="bottom">
-                <div className="left-img-2"><img src={gallery5} alt="" /></div>
-                <div className="m-right">
-                    <div className="top-img-3"><img src={gallery6} alt="" /></div>
-                    <div className="bottom-img-4"><img src={gallery7} alt="" /></div>
+    return (
+            <div className="main-container">
+                <div className="first-con">
+                    <h2>Фильтры</h2>
+                    <div className="price">
+                        <b>Стоимость</b>
+                        <br /><br /><div className="input">
+                            <input type="text" value={"1600"} />
+                            <input type="text" value={'4000'} />
+                        </div>
+                        <div className="range">
+                            <br /><br /><input type="range" />
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="people">
+                        <h3>Количество человек</h3>
+
+                        <div>
+                            <input type="text" value={"1 чел."} />
+                            <input type="text" value={"1 чел."} />
+                            <input type="text" value={"1 чел."} />
+                            <input type="text" value={"1 чел."} />
+                            <input type="text" value={"1 чел."} />
+                            <input type="text" value={"1 чел."} />
+                            <input type="text" value={"1 чел."} />
+                            <input type="text" value={"1 чел."} />
+                            <input type="text" value={"1 чел."} />
+                            <input type="text" value={"1 чел."} />
+                            <input type="text" value={"1 чел."} />
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="radio-input">
+                        <b>Место</b>
+                        <div>
+                            <input type="radio" name="city" checked />
+                            <label htmlFor="">Абхазия</label>
+                        </div>
+                        <div>
+                            <input type="radio" />
+                            <label htmlFor="">Америка</label>
+                        </div>
+                        <div>
+                            <input type="radio" />
+                            <label htmlFor="">Сочи</label>
+                        </div>
+                        <div>
+                            <input type="radio" />
+                            <label htmlFor="">Адлер</label>
+                        </div>
+                        <div>
+                            <input type="radio" />
+                            <label htmlFor="">Адлер</label>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <hr />
+                    <div className="b"><b>Длительность</b></div>
+                    <br />
+                    <br />
+                    <br />
+                    <hr />
+                    <div className="b2"><b>Дата</b></div>
+
                 </div>
             </div>
-        </div>
-
-        <div className="middle-img-5"><img src={gallery2} alt="" /></div>
-
-        <div className="right">
-            <div className="r-top">
-                <div className="left-img-6"><img src={gallery3} alt="" /></div>
-                <div className="right-img-7"><img src={gallery4} alt="" /></div>
-            </div>
-            <div className="bottom-img-8"><img src={gallery8} alt="" /></div>
-        </div>
-    </div>
-  )
+            )
 }
