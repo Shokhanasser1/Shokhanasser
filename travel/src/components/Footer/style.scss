@@ -1,92 +1,75 @@
-@import '../../assets/styles/settings';
-
 .footer-wrapper {
-    position: relative;
-    top: 622px;
-    bottom: 20px;
-    background-color: lightgray;
-    height: 200px;
-
-    .footer-content {
-        display: grid;
-        grid-template-columns: 2fr 6fr 1fr;
-        width: 100%;
-
-        @media screen and (max-width:1080px) {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 3fr 3fr 3fr;
-        }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0  160px;
+    height: 180px;
+    font-size: 20px;
+    @media screen and (max-width:1080px) {
+        width: 1000px;
+        padding: 20px;
     }
-
-
-    .footer-left {
-        padding: 30px 60px;
-    }
-
-    .footer-middle {
+    @media screen and (min-width:590px) and (max-width:770px) {
         display: flex;
         flex-direction: column;
-        display: grid;
-        grid-template-columns: 2fr 2fr 1fr;
-        padding: 10px;
-        .left {
-            margin-top: 20px;
-        }
-     
+        justify-content: space-between;
+        align-items: center;
+        height: 600px;
 
-        .footer-contacts{
-            display: flex;
-            flex-direction: column;
-            img {
-                position: relative;
-                top: 22px;
-                right: 25px;
-            }
+        .footer-content-1 {
+            width: 36%;
+            margin: 0 auto;
         }
 
-        .footer-contacts-2 {
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
+        .footer-content-2 {
+        margin-top: 7%;
+        width: 80%;
+        
+        }
 
-            .email-img {
-                position: relative;
-                top: 4px;
-                right: 10px;
+        .footer-content-3 {
+            position: absolute;
+            margin: 0 30px;
+            top: 330px;
+        }
+
+        .footer-content-4 {
+            span {
+                display: none;
             }
             .social-media {
-                display: grid;
-                grid-template-columns: repeat(3,1fr);
-                margin-top: 10px;
-            }
-            .img-1 {
-                max-width: 100%;
-                margin-top: 10px;
-                margin-right: 15px;
-            }
-            .img-2 {
-                max-width: 100%;
-                margin-top: 15px;
-            }
-            .img-3 {
-                max-width: 100%;
-                margin-top: 15px; 
+                position: absolute;
+                top: 160px;
+                left: 270px;
             }
         }
-       
- 
-        a {
-            display: block;
-            color: #282828;
-            text-decoration: none;
+    
+    }
+    .footer-content-2 {
+        display: flex;
+        flex-direction: column;
+    }
 
-
-            &:hover {
-                color: blue;
+    .footer-content-3 {
+        display: flex;
+        flex-direction: column;
+        div {
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            margin: 5px;
+        }
+    }
+    .footer-content-4 {
+        .social-media {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            width: 150px;
+            height: 50px;
+            img {
+                max-width: 100%;
             }
         }
-
-
     }
 }

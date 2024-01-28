@@ -8,8 +8,7 @@ import Blog2 from '../../assets/images/Rectangle-13-2.png'
 import Blog3 from '../../assets/images/Rectangle-13-1.png'
 import Blog4 from '../../assets/images/Rectangle-13-4.png'
 import ContactsForm from '../ContactsForm'
-// import Footer from '../Footer'
-import Footer1 from '../footer1'
+import Footer from '../Footer'
 function About() {
     const images = [Blog1, Blog2, Blog3, Blog4]
     return (
@@ -48,7 +47,7 @@ function About() {
             </div>
             <div className="footer">
             {/* <Footer /> */}
-            <Footer1 />
+            <Footer />
             </div>
         </div>
     )
