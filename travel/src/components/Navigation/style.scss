@@ -23,10 +23,10 @@
         .menu {
             display: flex;
             justify-content: space-between;
-            padding-left: 50px;
 
 
             .nav-links {
+                margin-left: 20%;
                 a,
                 button {
                     @extend %link;
@@ -234,14 +234,6 @@
     z-index: 12;
 }
 
-@media (max-width: $large-screen) {
-    .nav-wrapper {
-        .menu {
-            padding: 0;
-        }
-    }
-}
-
 @media (max-width: 800px) {
 
     .burger-menu-wrapper,
@@ -269,34 +261,28 @@
         }
     }
 
-    .nav-container {
 
-        .nav-wrapper {
             .menu {
                 width: 0;
                 height: 500px;
-                overflow: hidden;
                 display: none;
                 color: aqua;
             }
-        }
-    }
 
     #burger-menu-toggler:checked+.nav-container>.nav-wrapper>.menu {
         width: 450px;
-        position: absolute;
-        left: 65%;
+        position: relative;
+        left: 50%;
         display: flex;
         flex-direction: column;
         padding: 50px;
+        color: aqua;
 
         .nav-links {
+            width: 450px;
             display: flex;
             flex-direction: column;
 
-            button {
-                text-align: right;
-            }
         }
 
         * {
