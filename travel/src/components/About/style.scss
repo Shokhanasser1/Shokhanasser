@@ -4,11 +4,6 @@
     width: 1920px;
     margin: 0 auto;
 
-
-    .carousel {
-        width: 100%;
-    }
-
     .about-container {
 
         .about-wrapper {
@@ -31,6 +26,7 @@
                 @media screen and (max-width: 1080px) {
                     width: 700px;
                 }
+
                 @media screen and (max-width: 768px) {
                     width: 450px;
                 }
@@ -47,17 +43,20 @@
                 background-color: $gray-2;
                 border-radius: 10px;
                 padding: 70px;
+
                 @media screen and (max-width: 1080px) {
                     left: 450px;
                     padding: 50px;
                     font-size: 16px;
                     height: auto;
                 }
+
                 @media screen and (min-width: 600px) and (max-width: 768px) {
                     left: 30px;
                     padding: 30px;
                     font-size: 16px;
                 }
+
                 @media screen and (max-width: 800px) {
                     left: 220px;
                     padding: 30px;
@@ -77,16 +76,17 @@
             }
 
         }
+
         @media scren and (max-width: 1080px) {
-        width: 100%;    
+            width: 100%;
         }
-        
+
     }
 
     .carousel {
         position: relative;
         top: 400px;
-        width: 1300px;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -98,8 +98,12 @@
 
         h2 {
             color: $lightBlue;
-            margin-bottom: 60px;
-            margin-left: 210px;
+            margin-bottom: 70px;
+            margin-left: 370px;
+
+            @media screen and (max-width: 1080px) {
+                margin-left: 430px;
+            }
         }
 
         .value-text {
@@ -108,6 +112,7 @@
             align-items: center;
             flex-direction: column;
             padding: 60px;
+            margin: 0 auto;
 
             button {
                 @extend %info-btn;
@@ -118,18 +123,67 @@
                 width: 600px;
                 text-align: center;
             }
+
+            @media screen and (max-width: 770px) {
+                font-size: 16px;
+                position: absolute;
+                left: 20px;
+            }
+
+            @media screen and (min-width: 1000px) and (max-width:1080px) {
+                font-size: 18px;
+                position: absolute;
+                left: 180px;
+            }
+            @media screen and (min-width: 1081px) and (max-width:1400px) {
+                font-size: 18px;
+                position: absolute;
+                left: 310px;
+                margin-top: 10px;
+            }
+
         }
 
         .values-content {
+            width: 600px;
+            margin-left: 300px;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            padding-left: 80px;
+            justify-content: space-between;
+
+            padding-left: 40px;
+
+            @media screen and (max-width: 770px) {
+                margin-left: 0px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            @media screen and (min-width: 1000px) and (max-width:1080px) {
+                margin-left: 0px;
+                font-size: 18px;
+            }
+            @media screen and (min-width: 1081px) and (max-width:1400px) {
+                margin-left: 0;
+                font-size: 18px;
+            }
+
         }
 
         .value-item {
             width: 590px;
             display: flex;
+
+            @media screen and (min-width: 1000px) and (max-width: 1080px) {
+                width: 490px;
+            }
+
+            @media screen and (max-width: 770px) {
+                width: 100%;
+            }
+
+
 
 
 
@@ -159,7 +213,7 @@
     .gallery-divs {
         width: 100%;
         position: relative;
-        top: 1000px;
+        top: 1100px;
         margin: 0 auto;
     }
 
