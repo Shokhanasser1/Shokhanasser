@@ -15,8 +15,8 @@ function Blog() {
                     <Item />
                </div>
                <div className="small-text">
-                    <span className="span">
-                         АВТОБУСНЫЙ ТУР
+                    <span className="span" id="span-1">
+                         АВТОБУСНЫЙ
                     </span>
                     <span className="span">
                          ДЖИППИНГ

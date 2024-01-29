@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css"
 
 import firstImg from '../../../assets/images/Rectangle-26-1.png'
 import secondImg from '../../../assets/images/Rectangle-26-2.png'
+import { Link, useNavigate } from 'react-router-dom';
 
 function Arrow(props) {
     const { className, style, onClick } = props;
@@ -20,6 +21,12 @@ function Arrow(props) {
 }
 
 function CarouselComponent() {
+    const navigate = useNavigate()
+
+    const goToTeamsHash = () => {
+        navigate('/third')
+
+    }
     var settings = {
         dots: true,
         infinite: true,
@@ -87,6 +94,9 @@ function CarouselComponent() {
                         <div className="text-slides">
                             <b>Иван Иванов</b>
                             <br />
+                            <Link to={'/third'} onClick={goToTeamsHash} >
+                                <button>HHH</button>
+                            </Link>
                             <br />
                             <br />
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, a architecto ducimus temporibus sequi aspernatur numquam, perferendis, deserunt laboriosam similique possimus beatae. Eum aliquam unde consequuntur consequatur? Repudiandae laboriosam perferendis rem quidem minima eveniet illum officiis unde! Molestias ducimus mollitia repellat amet beatae totam, iure commodi, architecto dignissimos, excepturi voluptatem!</p>

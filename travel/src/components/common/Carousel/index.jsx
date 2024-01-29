@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './style.scss'
 import React from 'react'
+import { Link } from "react-router-dom";
 
 export default function BlogProductCarousel() {
     const responsive = {
@@ -82,6 +83,7 @@ export default function BlogProductCarousel() {
                         <h4 className="name--3">Конные прогулки</h4>
                         <small className="time-2">1,5 часов</small> <small className="price-2">1809 рублей</small>
                         <p className="info-2">Конные прогулки проходят в Лазурной долине. С долины открывается красивый вид на море, горы и лес. На всем пути следования экскурсии вас будут сопровождать опытные инструктора. Катание на лошадях или иппотерапия очень полезна для детей и взрослых...</p>
+                        
                         <button className="btn">Подробнее</button>
                     </div>
                     <div className="card-3">
