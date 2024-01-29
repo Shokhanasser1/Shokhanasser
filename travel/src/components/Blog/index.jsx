@@ -49,75 +49,77 @@ function Blog() {
                <div className="our-blogs">
 
                     <div className="second-container">
-                         <div className="main-container">
-                              <div className="first-con">
-                                   <h2>Фильтры</h2>
-                                   <div className="price">
-                                        <b>Стоимость</b>
-                                        <br /><br /><div className="input">
-                                             <input type="text" value={"1600"} />
-                                             <input type="text" value={'4000'} />
-                                        </div>
-                                        <div className="range">
-                                             <br /><br /><input type="range" />
-                                        </div>
-                                   </div>
-                                   <hr />
-                                   <div className="people">
-                                        <h3>Количество человек</h3>
-
-                                        <div>
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                             <input type="text" value={"1 чел."} />
-                                        </div>
-                                   </div>
-                                   <hr />
-                                   <div className="radio-input">
-                                        <b>Место</b>
-                                        <div>
-                                             <input type="radio" name="city" checked />
-                                             <label htmlFor="">Абхазия</label>
-                                        </div>
-                                        <div>
-                                             <input type="radio" />
-                                             <label htmlFor="">Америка</label>
-                                        </div>
-                                        <div>
-                                             <input type="radio" />
-                                             <label htmlFor="">Сочи</label>
-                                        </div>
-                                        <div>
-                                             <input type="radio" />
-                                             <label htmlFor="">Адлер</label>
-                                        </div>
-                                        <div>
-                                             <input type="radio" />
-                                             <label htmlFor="">Адлер</label>
-                                        </div>
-                                   </div>
-                                   <br />
-                                   <br />
-                                   <br />
-                                   <br />
-                                   <hr />
-                                   <div className="b"><b>Длительность</b></div>
-                                   <br />
-                                   <br />
-                                   <br />
-                                   <hr />
-                                   <div className="b2"><b>Дата</b></div>
-
+                         <h2>Фильтры</h2>
+                         <div className="price">
+                              <div className="header">
+                                   <h3>Стоимость</h3> <span>-</span>
+                              </div>
+                              <div className="input">
+                                   <input type="text" value={"1600"} />
+                                   <input type="text" value={'4000'} />
+                              </div>
+                              <input className="range" type="range" />
+                              <hr />
+                         </div>
+                         <div className="people">
+                              <div className="header">
+                                   <h3>Количество</h3> <span>-</span>
+                              </div>
+                              <div className="div">
+                                   <input type="text" value={"1 чел."} />
+                                   <input type="text" value={"1 чел."} />
+                                   <input type="text" value={"1 чел."} />
+                                   <input type="text" value={"1 чел."} />
+                                   <input type="text" value={"1 чел."} />
+                                   <input type="text" value={"1 чел."} />
+                                   <input type="text" value={"1 чел."} />
+                                   <input type="text" value={"1 чел."} />
+                                   <input type="text" value={"1 чел."} />
+                                   <input type="text" value={"1 чел."} />
+                                   <input type="text" value={"1 чел."} />
                               </div>
                          </div>
+                         <div className="radio-input">
+                              <hr />
+                              <div className="header">
+                                   <h3>Место</h3> <span>-</span>
+                              </div>
+                              <div>
+                                   <input type="radio" name="city" checked />
+                                   <label >Абхазия</label>
+                              </div>
+                              <div>
+                                   <input type="radio" />
+                                   <label >Америка</label>
+                              </div>
+                              <div>
+                                   <input type="radio" />
+                                   <label >Сочи</label>
+                              </div>
+                              <div>
+                                   <input type="radio" />
+                                   <label >Адлер</label>
+                              </div>
+                              <div>
+                                   <input type="radio" />
+                                   <label >Адлер</label>
+                              </div>
+                         </div>
+                         <hr />
+                         <div className="header-bottom">
+                              <h3>Длительность</h3> <span>+</span>
+                         </div>
+                         <hr />
+                         <div className="header-bottom">
+                              <h3>Дата</h3> <span>+</span>
+                         </div>
+                         <hr />
+                         <button className="info-btn">Pokazat</button>
+                         
+                         <div className="bottom-text">
+                                    <span>&times;</span>
+                                   <h3>сбросить фильтер</h3>
+                              </div>
                     </div>
 
                     <div className="first-container">

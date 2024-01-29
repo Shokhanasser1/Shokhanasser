@@ -28,7 +28,7 @@ function Nav(props) {
                         </Link>
 
                         <Link onClick={goToTeamsHash} to={'/blog'}>
-                            Ekskursiya
+                            Экскурсия 
                         </Link>
 
                         <Link to={'/profile'} >

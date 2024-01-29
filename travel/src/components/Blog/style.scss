@@ -60,6 +60,7 @@
    width: 1920px;
    margin: 0 auto;
    background-color: lightgray;
+   font-family: 'montserrat';
 
    .small-text {
       width: 70%;
@@ -88,7 +89,13 @@
             border-bottom: 2px solid $lightBlue;
          }
       }
+
+      @media screen and (min-width: 600px) and (max-width: 770px) {
+         width: 70%;
+         font-size: 10px;
+      }
    }
+
    .blog-wrapper {
       width: 70%;
       margin: 0 auto;
@@ -113,6 +120,7 @@
                top: -75px;
                right: -120px;
             }
+
             // @media screen and (min-width: 600px) and (max-width: 770px) {
             //    position: relative;
             //    top: -75px;
@@ -139,14 +147,16 @@
             font-weight: 400;
             box-shadow: 1px 1px 5px lightgray;
          }
+
          @media screen and (min-width: 1020px) and (max-width: 1090px) {
             font-size: 5px;
             width: 100%;
          }
+
          @media screen and (min-width: 600px) and (max-width: 770px) {
             width: 100%;
             display: grid;
-            grid-template-columns: 1fr 1.5fr;
+            grid-template-columns: 1.5fr 1.5fr;
          }
       }
    }
@@ -155,7 +165,8 @@
       width: 70%;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1.5fr 2.5fr;
+      grid-template-columns: 295px 75%;
+      gap: 40px;
       margin-bottom: 50px;
 
       .first-container {
@@ -166,7 +177,7 @@
             background-color: white;
             border-radius: 10px;
             display: grid;
-            grid-template-columns: 1fr 2.3fr;
+            grid-template-columns: 1fr 2.8fr;
             margin: 20px 0;
 
             .text-content {
@@ -184,14 +195,123 @@
 
       .second-container {
          border-radius: 10px;
-         width: 90%;
-         margin: 120px auto;
-         height: 1455px;
-         padding: 40px;
-         background-color: $lightBlue;
+         width: 295px;
+         margin: 110px 0;
+         height: 1150px;
+         padding: 20px;
+         background-color: snow;
 
+         .price {
+
+            .input {
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+
+               input {
+                  box-shadow: 1px 1px 4px gray;
+                  border: none;
+                  text-align: center;
+                  width: 120px;
+                  border-radius: 40px;
+                  padding: 10px;
+               }
+            }
+
+            .range {
+               width: 240px;
+               margin: 30px 10px;
+            }
+         }
+
+         .people {
+            .div {
+               display: grid;
+               grid-template-columns: 1fr 1fr 1fr;
+               gap: 7px;
+               margin-bottom: 35px;
+
+
+               input {
+                  text-align: center;
+                  width: 80px;
+                  height: 35px;
+                  border-radius: 50px;
+                  border: none;
+                  box-shadow: 1px 1px 4px gray;
+               }
+            }
+         }
+
+         .radio-input {
+
+            div {
+               padding: 5px;
+               font-size: large;
+            }
+            margin-bottom: 20px;
+         }
+
+         hr {
+            width: 80%;
+            margin: 0 auto;
+         }
+
+         h2 {
+            color: $lightBlue;
+         }
+
+         h3 {
+            margin: 20px 0;
+         }
+         .info-btn {
+            @extend %btn;
+            padding: 10px 20px;
+            margin: 40px 0;
+            background-color: $lightBlue;
+            border: none;
+            color: snow;
+            border-radius: 30px;
+            width: 95%;
+            height: 45px;
+         }
+
+         .header {
+            display: grid;
+            grid-template-columns: 4fr 0.5fr;
+
+            span {
+               font-size: 40px;
+               margin: 5px;
+            }
+         }
+         .header-bottom {
+            display: grid;
+            grid-template-columns: 4fr 0.5fr;
+            font-size: 20px;
+
+            span {
+               margin-top: 10px;
+               font-size: 40px;
+            }
+            margin: 10px 0;
+         }
+         .bottom-text {
+            margin-left: 20px;
+            display: grid;
+            grid-template-columns: 0.5fr 4fr;
+            font-size: 15px;
+
+            span {
+               margin-top: 10px;
+               font-size: 35px;
+            }
+            color: gray;
+         }
       }
 
+      @media screen and (min-width: 1020px) and (max-width: 1090px) {
+         width: 100%;
+      }
    }
 
 
@@ -317,92 +437,4 @@
 }
 
 
-.main-container {
-   display: flex;
-   position: relative;
 
-   .first-con {
-      width: 25%;
-      height: 1000px;
-      padding-right: 20%;
-      position: relative;
-      border-radius: 10px;
-
-      .b,
-      .b2{
-         position: relative;
-         left: 50px;
-         top: 20px;
-         font-size: large;
-      }
-
-
-      h2 {
-         padding: 20px 30px;
-      }
-
-      b {
-         padding: 10px;
-      }
-
-      hr {
-         width: 380px;
-      }
-
-
-      .price {
-         padding: 30px;
-
-         .range {
-            padding-left: 20px;
-           
-         }
-
-         .input {
-            display: flex;
-
-            input {
-               border-radius: 40px;
-               padding: 10px;
-               width: 150px;
-            }
-         }
-      }
-
-      .people {
-            h3{padding-left: 60px; padding-top: 20px;}
-         div {
-            display: inline-block;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
-            padding: 60px;
-
-
-            input {
-               text-align: center;
-               width: 83px;
-               height: 30px;
-               border-radius: 50px;
-               border: 1px solid gray;
-            }
-         }
-      }
-
-      .radio-input{
-         position: relative;
-         left: 50px;
-         top: 50px;
-
-         div{
-            display: flex;
-            padding: 3px;
-            font-size: large;
-            color: rgb(91, 91, 91);
-         }
-      }
-
-
-   }
-
-}
