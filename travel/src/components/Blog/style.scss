@@ -18,7 +18,7 @@
 
 
       .nav-links {
-         width: 400px;
+         width: 500px;
 
          a,
          button {
@@ -28,7 +28,9 @@
 
          }
 
-         @media screen and (max-width:770px) {}
+         @media screen and (max-width:770px) {
+            margin-right: 90px;
+         }
       }
    }
 
@@ -113,7 +115,7 @@
             width: 23px;
             position: relative;
             top: -76px;
-            right: -160px;
+            right: -210px;
 
             @media screen and (min-width: 1020px) and (max-width: 1090px) {
                position: relative;
@@ -134,6 +136,13 @@
             border-radius: 10px;
             margin: 40px;
             width: 233px;
+            cursor: pointer;
+            &:active {
+               transform: scale(0.8);
+            }
+         @media screen and (min-width: 600px) and (max-width: 770px) {
+            width: 200px;
+         }
          }
 
          input {
@@ -146,6 +155,8 @@
             font-size: 12px;
             font-weight: 400;
             box-shadow: 1px 1px 5px lightgray;
+            cursor: pointer;
+
          }
 
          @media screen and (min-width: 1020px) and (max-width: 1090px) {
@@ -156,7 +167,7 @@
          @media screen and (min-width: 600px) and (max-width: 770px) {
             width: 100%;
             display: grid;
-            grid-template-columns: 1.5fr 1.5fr;
+            grid-template-columns: 290px 290px;
          }
       }
    }
@@ -169,6 +180,18 @@
       gap: 40px;
       margin-bottom: 50px;
 
+      input {
+         &:active {
+            transform: scale(0.7);
+         }
+      }
+
+      button {
+         &:active {
+            transform: scale(0.8);
+         }
+      }
+
       .first-container {
          margin-top: 100px;
 
@@ -177,13 +200,90 @@
             background-color: white;
             border-radius: 10px;
             display: grid;
-            grid-template-columns: 1fr 2.8fr;
+            grid-template-columns: 1fr 2.2fr;
             margin: 20px 0;
 
-            .text-content {
-               padding: 30px;
+            img {
+               height: 100%;
             }
 
+            .information {
+               img {
+                  margin-right: 8px;
+               }
+            }
+            .header-content {
+               padding: 30px;
+
+               b {
+                  font-size: 25px;
+               }
+
+               span {
+                  margin-left: 15px;
+                  color: rgb(207, 207, 0);
+               }
+            }
+
+            .price-content {
+               display: grid;
+               grid-template-columns: 130px 130px 160px;
+               font-size: 25px;
+               padding-left: 30px;
+               margin-right: 40px;
+               color: $lightBlue;
+            }
+
+            .text-content {
+               width: 84%;
+               font-size: 16px;
+               margin-top: 40px;
+               border-left: 6px solid $lightBlue;
+               padding-left: 30px;
+            }
+
+            .button-and-like {
+               padding-bottom: 20px;
+
+               button {
+                  border: none;
+                  background-color: $lightBlue;
+                  padding: 10px 20px;
+                  margin-right: 30px;
+                  font-size: 20px;
+
+               }
+
+               .button {
+                  border-radius: 40px;
+                  color: snow;
+                  width: 300px;
+                  height: 50px;
+                  font-family: 'Montserrat';
+               }
+
+               .like {
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  padding: 11px;
+
+               }
+
+               @media screen and (min-width: 760px) and (max-width: 1090px) {
+                  .text-content {
+                     font-size: 10px;
+                  }
+
+                  .button {
+                     width: 200px;
+                  }
+
+                  margin: 30px;
+               }
+
+               margin-top: 30px;
+            }
          }
 
          h2 {
@@ -214,6 +314,17 @@
                   width: 120px;
                   border-radius: 40px;
                   padding: 10px;
+
+                  @media screen and (min-width: 1020px) and (max-width: 1090px) {
+                     width: 280px;
+                     margin: 20px;
+                  }
+               }
+
+               @media screen and (min-width: 1020px) and (max-width: 1090px) {
+                  display: grid;
+                  grid-template-columns: 2fr 1fr;
+
                }
             }
 
@@ -226,7 +337,7 @@
          .people {
             .div {
                display: grid;
-               grid-template-columns: 1fr 1fr 1fr;
+               grid-template-columns: 80px 80px 80px;
                gap: 7px;
                margin-bottom: 35px;
 
@@ -238,7 +349,18 @@
                   border-radius: 50px;
                   border: none;
                   box-shadow: 1px 1px 4px gray;
+
+                  &:hover {
+                     background-color: aqua;
+                     border: 1px solid aqua;
+                  }
+
+                  &:active {
+                     background-color: aqua;
+                     border: 1px solid aqua;
+                  }
                }
+
             }
          }
 
@@ -248,6 +370,7 @@
                padding: 5px;
                font-size: large;
             }
+
             margin-bottom: 20px;
          }
 
@@ -263,6 +386,7 @@
          h3 {
             margin: 20px 0;
          }
+
          .info-btn {
             padding: 10px 20px;
             margin: 20px 0;
@@ -275,7 +399,7 @@
 
             &:active {
                transform: scale(0.8);
-           }
+            }
          }
 
          .header {
@@ -287,6 +411,7 @@
                margin: 5px;
             }
          }
+
          .header-bottom {
             display: grid;
             grid-template-columns: 4fr 0.5fr;
@@ -295,10 +420,12 @@
             span {
                font-size: 40px;
             }
+
             cursor: pointer;
 
             margin: 10px 0;
          }
+
          .bottom-text {
             margin-left: 20px;
             display: grid;
@@ -310,12 +437,20 @@
                margin-top: 10px;
                font-size: 35px;
             }
+
             color: gray;
+         }
+
+         @media screen and (min-width: 760px) and (max-width: 1090px) {
+            width: 100%;
          }
       }
 
-      @media screen and (min-width: 1020px) and (max-width: 1090px) {
-         width: 100%;
+      @media screen and (min-width: 760px) and (max-width: 1090px) {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
       }
    }
 
@@ -444,6 +579,3 @@
    position: relative;
    bottom: 0;
 }
-
-
-
