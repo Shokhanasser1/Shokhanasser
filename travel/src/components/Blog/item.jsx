@@ -39,7 +39,7 @@ function Item(props) {
                     <Link>
                         Экскурсия
                     </Link>
-                    <Link to={'/contact'}>
+                    <Link to={'/third'}>
                         Личный кабинет
                     </Link>
                 </div>
