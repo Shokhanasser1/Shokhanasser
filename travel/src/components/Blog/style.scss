@@ -264,15 +264,18 @@
             margin: 20px 0;
          }
          .info-btn {
-            @extend %btn;
             padding: 10px 20px;
-            margin: 40px 0;
+            margin: 20px 0;
             background-color: $lightBlue;
             border: none;
             color: snow;
             border-radius: 30px;
             width: 95%;
             height: 45px;
+
+            &:active {
+               transform: scale(0.8);
+           }
          }
 
          .header {
@@ -290,9 +293,10 @@
             font-size: 20px;
 
             span {
-               margin-top: 10px;
                font-size: 40px;
             }
+            cursor: pointer;
+
             margin: 10px 0;
          }
          .bottom-text {
@@ -300,6 +304,7 @@
             display: grid;
             grid-template-columns: 0.5fr 4fr;
             font-size: 15px;
+            cursor: pointer;
 
             span {
                margin-top: 10px;
@@ -319,7 +324,11 @@
       width: 100%;
    }
 
-
+   input,
+   span,
+   button {
+      cursor: pointer;
+   }
 }
 
 .burger-menu-wrapper {
