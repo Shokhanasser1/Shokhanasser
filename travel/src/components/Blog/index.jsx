@@ -30,15 +30,15 @@ function Blog() {
                </div>
                <div className="blog-wrapper">
                     <div className="input-btn">
-                         <div className="input-1">
+                         <div className="input">
                               <input type="text" name="" value={"Абхазия"} id="county" />
                               <img src={geolocationImg} alt="" width={23} height={28} />
                          </div>
-                         <div className="input-2">
+                         <div className="input">
                               <input type="text" name="" value={"2022-07-16"} id="date" />
                               <img src={calendarImg} alt="" width={23} height={23} />
                          </div>
-                         <div className="input-3">
+                         <div className="input">
                               <input type="text" name="" id="people" value={"5 человек"} />
                               <img src={peopleImg} alt="" width={23} height={23} />
                          </div>
