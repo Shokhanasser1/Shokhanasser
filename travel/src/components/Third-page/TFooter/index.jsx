@@ -8,7 +8,7 @@ import FooterInst from '../../../assets/icons/inst 1f.png'
 import FooterVk from '../../../assets/icons/vk 1f.png'
 import ColorLogo from "../../../assets/icons/logo_color 1f.png"
 
-export default function TFooter() {
+export default function Footer() {
     return (
         <div className='footer-wrapper'>
             <div className="footer-content-1">

@@ -37,7 +37,7 @@ function Item(props) {
                         Главная
                     </Link>
                     <Link>
-                        Экскурсия
+                        Экскурсия 
                     </Link>
                     <Link to={'/third'}>
                         Личный кабинет

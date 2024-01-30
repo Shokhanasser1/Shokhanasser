@@ -30,7 +30,7 @@ function Blog() {
                     </span>
                     <span className="span">
                          КАНЬОНИНГ
-                    </span>
+                    </span> 
                </div>
                <div className="blog-wrapper">
                     <div className="input-btn">
