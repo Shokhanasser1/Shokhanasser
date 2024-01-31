@@ -31,7 +31,7 @@ function Nav(props) {
                             Экскурсия 
                         </Link>
 
-                        <Link to={'/profile'} >
+                        <Link to={'/blog'} >
                             Личный кабинет
                         </Link>
                     </div>
@@ -41,7 +41,9 @@ function Nav(props) {
                     <h2>Путешествуй</h2>
                     <span className='together'>вместе с</span>
                     <h1>Pero travel</h1>
+                    <Link onClick={goToTeamsHash} to={'/blog'} >
                     <button className='btn'>К экскурсиям</button>
+                    </Link>
                 </div>
 
 

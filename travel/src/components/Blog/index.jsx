@@ -1,7 +1,6 @@
 import Item from "./item"
 import './style.scss'
 import Footer from "../Footer/";
-
 import geolocationImg from '../../assets/icons/geolocation.png'
 import calendarImg from '../../assets/icons/calendar.png'
 import peopleImg from '../../assets/icons/people.png'
@@ -10,9 +9,14 @@ import tourImg from '../../assets/images/Rectangle 40.png'
 import frame from '../../assets/icons/frame-1.png'
 import time from '../../assets/icons/time 1.png'
 import LikeImg from '../../assets/icons/Vector-2.png'
+import { Link, useNavigate } from "react-router-dom";
 function Blog() {
+     const navigate = useNavigate()
 
-
+     const goToTeamsHash = () => {
+         navigate('/blog')
+ 
+     }
      return (
           <div className="blog-container">
                <div className="navbar-item">
@@ -150,7 +154,9 @@ function Blog() {
                                         <p>Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
                                    </div>
                                    <div className="button-and-like">
+                                        <Link onClick={goToTeamsHash} to={'/third'}>
                                         <button className="button">Подробнее</button>
+                                        </Link>
                                         <button className="like"><img src={LikeImg} alt="" /></button>
                                    </div>
                               </div>
@@ -175,7 +181,9 @@ function Blog() {
                                         <p>Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
                                    </div>
                                    <div className="button-and-like">
+                                   <Link onClick={goToTeamsHash} to={'/third'}>
                                         <button className="button">Подробнее</button>
+                                   </Link>
                                         <button className="like"><img src={LikeImg} alt="" /></button>
                                    </div>
                               </div>
